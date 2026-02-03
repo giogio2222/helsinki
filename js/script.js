@@ -1,8 +1,8 @@
 // Sticky Navbar
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
     header.classList.toggle('scrolled', window.scrollY > 0);
-    
+
     // Back to top button
     const topBtn = document.querySelector('.top-btn');
     if (topBtn) {
@@ -55,7 +55,7 @@ function setupTOC() {
 function setupSearch() {
     const searchBar = document.getElementById('search-bar');
     const blogCards = document.querySelectorAll('.blog-card');
-    
+
     if (searchBar) {
         searchBar.addEventListener('keyup', (e) => {
             const searchString = e.target.value.toLowerCase();
@@ -72,11 +72,32 @@ function setupSearch() {
     }
 }
 
+// FAQ Accordion functionality
+function setupFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+
+                // Close all other instances if needed (optional)
+                faqItems.forEach(i => i.classList.remove('active'));
+
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        }
+    });
+}
+
 // Initialize components
 document.addEventListener('DOMContentLoaded', () => {
     setupTOC();
     setupSearch();
-    
+    setupFAQ();
+
     // Smooth scroll for TOC links
     document.querySelectorAll('.toc-content a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
