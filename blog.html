@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Helsinki Speaker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .animate-me {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .animate-me.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container mobile-container">
+            <nav>
+                <div class="logo">HELSINKI</div>
+                <div class="menu-btn"><i class="fas fa-bars"></i></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="blog-listing">
+        <div class="container">
+            <div class="section-header animate-me">
+                <h1>WARTA & TIPS</h1>
+                <p>Eksplorasi dunia audio dan gaya hidup minimalis bersama kami.</p>
+            </div>
+
+            <div class="search-container animate-me">
+                <input type="text" id="search-bar" class="search-bar" placeholder="Cari judul artikel...">
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog 1 -->
+                <article class="blog-card animate-me">
+                    <img src="img/blog1.png" alt="Musik Fokus">
+                    <div class="blog-card-content">
+                        <h3>Manfaat Musik dalam Meningkatkan Fokus Kerja</h3>
+                        <p>Bagaimana frekuensi suara tertentu dapat membantu otak Anda bekerja lebih produktif dan
+                            kreatif di kantor.</p>
+                        <a href="artikel/manfaat-musik-fokus-kerja.html" class="btn btn-outline"
+                            style="padding: 10px 20px;">Baca Selengkapnya</a>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="blog-card animate-me">
+                    <img src="img/variants.png" alt="Merawat Speaker">
+                    <div class="blog-card-content">
+                        <h3>Panduan Lengkap Merawat Speaker Portabel Agar Tetap Awet</h3>
+                        <p>Tips membersihkan material kain dan menjaga baterai speaker bluetooth Anda tetap dalam
+                            kondisi prima.</p>
+                        <a href="artikel/cara-merawat-speaker-portabel.html" class="btn btn-outline"
+                            style="padding: 10px 20px;">Baca Selengkapnya</a>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="blog-card animate-me">
+                    <img src="img/hero.png" alt="Review Helsinki">
+                    <div class="blog-card-content">
+                        <h3>Review Mendalam Vifa Helsinki: Suara Premium dalam Balutan Tekstil</h3>
+                        <p>Ulasan jujur mengenai kualitas suara, daya tahan baterai, dan estetika desain Nordik dari
+                            seri Helsinki.</p>
+                        <a href="artikel/review-vifa-helsinki.html" class="btn btn-outline"
+                            style="padding: 10px 20px;">Baca Selengkapnya</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pagination animate-me">
+                <a href="#" class="btn btn-outline" style="padding: 10px 20px;"><i class="fas fa-chevron-left"></i>
+                    Previous</a>
+                <span>Halaman 1 dari 1</span>
+                <a href="#" class="btn btn-outline" style="padding: 10px 20px;">Next <i
+                        class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <section class="cta-section animate-me">
+        <div class="container">
+            <div class="cta-content">
+                <h2>PUNYA PERTANYAAN LAIN?</h2>
+                <p>Kami siap membantu Anda memilih speaker terbaik sesuai dengan preferensi musik Anda.</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20konsultasi%20mengenai%20speaker"
+                    class="btn btn-white">HUBUNGI WHATSAPP <i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>AR-STORE</h3>
+                    <p>Penyedia perangkat audio premium terlengkap dan terpercaya.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>BLOG</h3>
+                    <ul>
+                        <li><a href="#">Berita Terbaru</a></li>
+                        <li><a href="#">Tips Audio</a></li>
+                        <li><a href="#">Review Produk</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>TENTANG</h3>
+                    <ul>
+                        <li><a href="about.html">Kisah Kami</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>DOWNLOAD</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-google-play"></i> Android App</a></li>
+                        <li><a href="#"><i class="fab fa-apple"></i> iOS App</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AR-STORE. Seluruh Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-actions">
+        <a href="#" class="float-btn top-btn"><i class="fas fa-chevron-up"></i></a>
+        <a href="https://wa.me/6281234567890" class="float-btn wa-btn"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

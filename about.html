@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Helsinki Speaker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .animate-me {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .animate-me.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .about-hero {
+            background: #f4f9fb;
+            padding: 150px 0 100px;
+            text-align: center;
+        }
+
+        .about-story {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-story img {
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .about-story {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container mobile-container">
+            <nav>
+                <div class="logo">HELSINKI</div>
+                <div class="menu-btn"><i class="fas fa-bars"></i></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="about.html" class="active">Tentang Kami</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1 class="animate-me">KISAH KAMI</h1>
+            <p class="animate-me">Mendedikasikan diri untuk kesempurnaan audio dan estetika desain Nordik.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="about-story">
+                <div class="animate-me">
+                    <img src="img/blog1.png" alt="Our Workspace">
+                </div>
+                <div class="animate-me">
+                    <h2>FILOSOFI DESAIN KAMI</h2>
+                    <p>Berawal dari keinginan untuk menciptakan perangkat audio yang tidak hanya terdengar hebat, tetapi
+                        juga terlihat indah di ruang tamu mana pun. Helsinki lahir sebagai perpaduan antara teknologi
+                        audio Denmark dan desain minimalis.</p>
+                    <p>Kami percaya bahwa musik adalah bagian penting dari kehidupan sehari-hari, dan setiap orang layak
+                        mendapatkan kualitas suara terbaik dalam balutan desain yang tidak lekang oleh waktu.</p>
+                    <p>Setiap detail, mulai dari pilihan material kain dari Kvadrat hingga strap kulit dari Tärnsjö
+                        Garveri, dipilih dengan teliti untuk memastikan kualitas premium yang dapat Anda rasakan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section animate-me">
+        <div class="container">
+            <div class="cta-content">
+                <h2>INGIN TAHU LEBIH LANJUT?</h2>
+                <p>Konsultasikan kebutuhan audio Anda dengan tim kami untuk mendapatkan rekomendasi terbaik.</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20tanya%20tentang%20produk%20Helsinki"
+                    class="btn btn-white">HUBUNGI VIA WHATSAPP <i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>AR-STORE</h3>
+                    <p>Penyedia perangkat audio premium terlengkap dan terpercaya.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>BLOG</h3>
+                    <ul>
+                        <li><a href="#">Berita Terbaru</a></li>
+                        <li><a href="#">Tips Audio</a></li>
+                        <li><a href="#">Review Produk</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>TENTANG</h3>
+                    <ul>
+                        <li><a href="about.html">Kisah Kami</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>DOWNLOAD</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-google-play"></i> Android App</a></li>
+                        <li><a href="#"><i class="fab fa-apple"></i> iOS App</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AR-STORE. Seluruh Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-actions">
+        <a href="#" class="float-btn top-btn"><i class="fas fa-chevron-up"></i></a>
+        <a href="https://wa.me/6281234567890" class="float-btn wa-btn"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
